@@ -1,0 +1,40 @@
+/* Basic styling */
+/* Draw the lines */
+.jOrgChart .line {
+  height                : 20px;
+  width                 : 4px;
+}
+
+.jOrgChart .down {
+  background-color 		: #1abc9c;	
+  margin 				: 0px auto;
+}
+
+.jOrgChart .top {
+  border-top          : 3px solid #1abc9c;
+}
+
+.jOrgChart .left {
+  border-right          : 2px solid #1abc9c;
+}
+
+.jOrgChart .right {
+  border-left           : 2px solid #1abc9c;
+}
+
+/* node cell */
+.jOrgChart td {
+  text-align            : center;
+  vertical-align        : top;
+  padding               : 0px 2px;
+}
+
+/* The node */
+.jOrgChart .node {
+  background-color 		: white;
+  display               : inline-block;
+  width                 : 120px;
+  height                : 70px;
+  border				: 3px solid #1abc9c;
+
+}

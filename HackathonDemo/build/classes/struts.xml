@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE struts PUBLIC  
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"  
+    "http://struts.apache.org/dtds/struts-2.3.dtd">  
+      
+<struts>  
+    <constant name="struts.i18n.encoding" value="UTF-8" />  
+    <constant name="struts.serve.static.browserCache" value="true" />  
+      
+    <package name="json" extends="json-default">  
+        <action name="login" method="login" class="com.oracle.hackson.action.LoginAction">  
+            <result type="json" name="success">
+                <param name="root">message</param>
+            </result>
+        </action>  
+        <action name="logout" method="logout" class="com.oracle.hackson.action.LoginAction">  
+            <result type="json" name="success">
+                <param name="root">message</param>
+            </result>
+        </action>  
+        <action name="checkEmail" method="checkEmail" class="com.oracle.hackson.action.LoginAction">  
+             <result type="json" name="success">
+                <param name="root">message</param>
+            </result>
+        </action>  
+        <action name="signup" method="signup" class="com.oracle.hackson.action.LoginAction">  
+             <result type="json" name="success">
+                <param name="root">message</param>
+            </result>
+        </action>      
+        
+        <action name="basicSearch" method="basicSearch" class="com.oracle.hackson.action.SearchAction">  
+             <result type="json" name="success">
+                <param name="root">message</param>
+            </result>
+        </action>   
+        
+        <action name="orgSearch" method="orgSearch" class="com.oracle.hackson.action.SearchAction">  
+             <result type="json" name="success">
+                <param name="root">message</param>
+            </result>
+        </action> 
+    </package>  
+
+      
+</struts>   
